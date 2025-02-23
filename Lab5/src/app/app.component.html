@@ -1,0 +1,15 @@
+<app-header
+  [categories]="categories"
+  (categorySelected)="selectCategory($event)">
+</app-header>
+
+<div *ngIf="getSelectedCategory() as selectedCategory">
+  <h2>{{ selectedCategory.name }}</h2>
+  <app-product-list
+    [products]="selectedCategory.products || []"
+    (productRemoved)="deleteProduct($event)"
+    (productLiked)="likeProduct($event)">
+  </app-product-list>
+</div>
+
+<router-outlet></router-outlet>
