@@ -1,0 +1,13 @@
+<div class="product-card">
+    <div class="card-body">
+      <div class="name-of-product">
+        <h3>Album Details</h3>
+        <input [(ngModel)]="newTitle" placeholder="New title" />
+        <button (click)="onSave()">Save</button>
+      </div>
+      <div class="actions">
+        <button (click)="onReturn()">Return</button>
+        <button (click)="onViewPhotos()">Photos</button>
+      </div>
+    </div>
+  </div>
