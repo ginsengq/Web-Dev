@@ -1,0 +1,15 @@
+<div class="task-list">
+    <h2>Task List</h2>
+    <div *ngFor="let task of tasks; let i = index">
+      <app-task-item
+        [title]="task.title"
+        [description]="task.description"
+        [category]="task.category"
+        [status]="task.status"
+        [deadline]="task.deadline"
+        (taskCompleted)="onTaskCompleted(i)"
+        (viewDetails)="onViewDetails(task.id)"
+        (taskDeleted)="onTaskDeleted(i)">
+      </app-task-item>
+    </div>
+  </div>

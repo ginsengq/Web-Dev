@@ -1,0 +1,107 @@
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #007bff;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .task-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .task-info {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .task-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 12px; /* Отступ после заголовка */
+  }
+  
+  .task-description,
+  .task-category,
+  .task-status,
+  .task-deadline {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 8px; /* Отступ между полями */
+  }
+  
+  .task-buttons {
+    display: flex;
+    flex-direction: column; /* Кнопки в колонку */
+    gap: 10px; /* Отступ между кнопками */
+    align-items: flex-end; /* Выравнивание кнопок по правому краю */
+  }
+  
+  .task-buttons button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  /* Кнопка "Mark as Completed" */
+  .complete-btn {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    box-shadow: 0 4px 6px rgba(76, 175, 80, 0.3);
+    width: 100%; /* Ширина кнопки */
+    justify-content: center; /* Текст по центру */
+  }
+  
+  .complete-btn:hover {
+    background: linear-gradient(135deg, #43A047, #1B5E20);
+    transform: scale(1.05);
+  }
+  
+  /* Кнопка "View Details" */
+  .details-btn {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+    width: 100%; /* Ширина кнопки */
+    justify-content: center; /* Текст по центру */
+  }
+  
+  .details-btn:hover {
+    background: linear-gradient(135deg, #0056b3, #003d80);
+    transform: scale(1.05);
+  }
+  
+  /* Кнопка "Delete" */
+  .delete-btn {
+    background: linear-gradient(135deg, #E53935, #B71C1C);
+    color: white;
+    box-shadow: 0 4px 6px rgba(229, 57, 53, 0.3);
+    width: 100%; /* Ширина кнопки */
+    justify-content: center; /* Текст по центру */
+  }
+  
+  .delete-btn:hover {
+    background: linear-gradient(135deg, #D32F2F, #880E4F);
+    transform: scale(1.05);
+  }
+  
+  button svg {
+    width: 16px;
+    height: 16px;
+  }
+  

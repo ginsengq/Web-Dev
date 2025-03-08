@@ -1,0 +1,23 @@
+<div class="task-item">
+  <div class="task-info">
+    <div class="task-title">{{ title }}</div>
+    <div class="task-description">{{ description }}</div>
+    <div class="task-category">Category: {{ category }}</div>
+    <div class="task-status">Status: {{ status }}</div>
+    <div class="task-deadline">Deadline: {{ deadline }}</div>
+  </div>
+  <div class="task-buttons">
+    <button class="complete-btn" (click)="markAsCompleted()">
+      <svg>...</svg>
+      Mark as Completed
+    </button>
+    <button class="details-btn" (click)="onViewDetails()">
+      <svg>...</svg>
+      View Details
+    </button>
+    <button class="delete-btn" (click)="onDelete()">
+      <svg>...</svg>
+      Delete
+    </button>
+  </div>
+</div>
