@@ -1,0 +1,10 @@
+<h2>Companies</h2>
+
+<div *ngIf="isLoading">Loading...</div>
+<div *ngIf="!isLoading && companies.length === 0">No companies found.</div>
+
+<ul>
+  <li *ngFor="let company of companies">
+    {{ company.name }} ({{ company.city }})
+  </li>
+</ul>
