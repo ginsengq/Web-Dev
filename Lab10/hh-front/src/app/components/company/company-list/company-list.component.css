@@ -1,0 +1,37 @@
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .list-group-item {
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    
+    &:hover {
+      background-color: #f8f9fa;
+      transform: translateX(5px);
+    }
+    
+    h5 {
+      color: #0d6efd;
+      margin-bottom: 5px;
+    }
+    
+    p {
+      margin-bottom: 5px;
+      color: #6c757d;
+    }
+    
+    small {
+      color: #6c757d;
+    }
+  }
+  
+  .text-center {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+  }
